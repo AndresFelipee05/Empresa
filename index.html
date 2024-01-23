@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *{
+        font-family:cursive;
+        box-sizing: border-box;
+        margin: 0;
+    }  
+
+    header{
+        background-image: url(https://golsmedia.com/wp-content/uploads/2021/05/todo-necesitas-saber-crear-club-deportivo-e1622449688440.jpg);
+        background-size: 100%; 
+        padding: 120px;
+        text-align: center;
+        color:grey;
+        font-weight: bold;
+        text-shadow: 5px 3px black;
+    }   
+
+    .arriba{
+        padding-top: 5px;
+    }
+
+    nav {
+        background-color: orange; 
+        display: flex;
+        justify-content: space-around; 
+        position: sticky;
+        top:0;          
+    }
+
+    nav a{
+        text-decoration: none;
+        color:white; 
+        padding: 20px;
+    }
+        
+    nav a:hover{
+        color:yellow; font-weight: bold;text-shadow: 3px 3px 3px black;
+    }
+
+    iframe{
+        float: left;
+        width: 35%;
+        height:350px;
+        padding-left: 50px ;
+    }
+
+    .cuadro-texto{
+        padding-top: 90px;
+        float: right;
+        width: 50%;
+        text-shadow: 1px  1px green;
+        color: grey;
+
+    }
+    
+    #seccion2{
+        padding-top: 100px;
+        display: flex;
+    }
+    
+    #seccion1{
+        display: flex;
+    }
+
+    p{
+        padding-top: 0px;
+    }
+
+    .caja{
+        border: 2px solid brown;
+        padding: 15px;
+        background-color: brown;
+        color:cornsilk;
+        text-shadow: 2px  2px black;
+    }
+
+    footer {
+        text-align: center;
+    
+    }
+   
+    #enlaces a{
+        text-decoration: none;
+        color: white;
+        margin: 55px;
+    }
+
+    #enlaces a:hover{
+        color:lightskyblue;
+        font-size: 2em;
+    }
+
+    footer{
+        background-color: grey;
+        padding-top: 15px;
+      
+    }
+
+    #clientes{
+        padding-bottom: 40px;
+    }
+
+    #servicios p{
+        text-align: center;
+    }
+
+    #servicios img{
+        height: 700px;
+    }
+        @media(max-width:600px){
+            
+            #navegador{display: block;position: static;}
+
+            #navegador a {display: block;text-align: center;}
+
+            footer{display: block;}
+
+            footer a {display: block;}
+        }
+
+        @media(min-width:601) and (max-width:800px){
+
+            #navegador{display: block;position: static;}
+
+            #navegador a {display: block;text-align: center;}
+
+            footer{display: block;}
+
+            footer a {display: block;}
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1 class="arriba">Bienvenido al club deportivo</h1>
+        <h1>FRAILE</h1>
+    </header>
+
+    <nav id="navegador">
+
+        
+        <a href="#seccion1">Dónde estamos</a></li>
+        <a href="#seccion2" target="_blank" class="2">Nuestros servicios</a></li>
+        <a href="#seccion3" target="_blank" class="3">Nuestros clientes</a></li>
+       
+
+    </nav>
+
+    <main id="seccion1">
+        <article>
+            <h2 style="padding-top: 20px;border-top: 2px solid orange; padding-left: 150px;">Dónde estamos</h2>
+            
+            <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.5237133434175!2d-2.6008304247818206!3d39.2763720242555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd688795bc9b74cf%3A0x1f0a80aadf3c230a!2sComplejo%20Deportivo%20Municipal%20%E2%80%9CBarrio%20Asturias%E2%80%9D.!5e0!3m2!1ses!2ses!4v1702499524610!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p class="cuadro-texto">Esta en nuestra ubicación por si estás interesado para ver con tus propios ojos nuestras grandes y modernas instalaciones, estamos rankeados como el Top 10 mejor club deportivo de toda España y el 28º a nivel mundial, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat impedit animi nostrum ullam quas iure vero unde quidem, sed mollitia tempora necessitatibus, consectetur numquam nulla tenetur commodi? Quod, laborum asperiores?, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel non, dignissimos at placeat iusto perferendis ullam. Modi reprehenderit optio nisi, dolor temporibus voluptatum ipsum tenetur incidunt numquam repellendus molestiae aspernatur? </p>
+             </div>
+        </article>
+        
+    </main>
+      <section>
+        <div id="seccion2">
+            <h2 style="padding-left: 580px;">Nuestros servicios</h2>
+        </div>
+            <div id="servico">
+                <div id="servicios">
+                    <p><img src="https://clubdeportivo.novaschool.es/wp-content/uploads/sites/31/2020/11/horarios-y-tarifas-2020-21-complejo-deportivo-novaschool.jpg" alt=""></p>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div>
+            <h2 style="padding-left: 580px;">Nuestros clientes</h2>
+        </div>
+        
+        <div class="opiniones">
+            <br>
+            <div class="caja">
+            <p>1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores repudiandae magni, eveniet tempore rem aperiam accusantium debitis ad voluptas dignissimos corrupti totam sapiente commodi odio tenetur repellat reiciendis iste consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quas voluptates nam dolore et, similique, quo reiciendis quae quidem nemo optio id quisquam quod expedita harum ratione voluptate incidunt? Optio.</p>
+            </div>
+            <br>
+            <div class="caja">
+            <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi, doloremque aperiam commodi provident neque sapiente, quasi dignissimos molestias sit tempora minima nam magni asperiores quibusdam suscipit dolor laudantium maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quos, officiis dolor nobis eius accusamus veniam, rem perferendis magni dignissimos distinctio molestiae sequi sint amet suscipit quae dolorum itaque? Atque?</p>
+            </div>
+            <br>
+            <div class="caja">
+            <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum facere molestiae totam, quisquam velit possimus veniam hic eos mollitia cupiditate fuga aspernatur minima molestias quae excepturi autem, quidem laboriosam rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aperiam incidunt exercitationem rerum amet officiis eligendi. Alias, itaque earum velit, dolore, fugit unde praesentium eius mollitia odio inventore impedit tempore?</p>
+            </div>
+        </div>
+    </section>
+<br><br>
+    <footer style="padding-top: 50px;">
+        <div id="clientes">
+            <h2>Nuestros clientes</h2>
+        </div>
+        <hr>
+
+        <div id="enlaces">
+            <br>
+            <h2>Enlaces</h2>
+            <br>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <br><br><br>
+        </div>
+    </footer>
+</body>
+</html>
